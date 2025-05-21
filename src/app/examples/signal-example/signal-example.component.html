@@ -1,1 +1,4 @@
-<p>signal-example works!</p>
+<input #counterInput type="number" placeholder="provide start number" [(ngModel)]="counterInputVariable"/><br>
+<button (click)="setCounter()">click to evaluate</button>
+<p>The provided counter  {{this.initialCounter()}} times 10 equals to: {{this.computedCounter()}}</p>
+<p *ngIf="valueHasChanged()">Value of Counter has changed!</p>
